@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap");
+
+/* ── Theme tokens ───────────────────────────────────── */
+:root,
+[data-theme="dark"] {
+  --color-bg:       #0a0a0f;
+  --color-surface:  #111118;
+  --color-surface2: #1a1a24;
+  --color-text:     #f0eeff;
+  --color-muted:    #8884aa;
+  --color-border:   rgba(108, 99, 255, 0.18);
+
+  --font-syne:    "Syne", sans-serif;
+  --font-dm-sans: "DM Sans", sans-serif;
+}
+
+[data-theme="light"] {
+  --color-bg:       #f8f7ff;
+  --color-surface:  #ffffff;
+  --color-surface2: #f0eeff;
+  --color-text:     #0d0b1f;
+  --color-muted:    #5a5580;
+  --color-border:   rgba(108, 99, 255, 0.2);
+}
+
+/* ── Base ───────────────────────────────────────────── */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: "DM Sans", sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ── Utility classes that respect theme ─────────────── */
+.themed-bg       { background-color: var(--color-bg); }
+.themed-surface  { background-color: var(--color-surface); }
+.themed-surface2 { background-color: var(--color-surface2); }
+.themed-text     { color: var(--color-text); }
+.themed-muted    { color: var(--color-muted); }
+.themed-border   { border-color: var(--color-border); }
+
+/* ── Scrollbar ──────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track  { background: var(--color-bg); }
+::-webkit-scrollbar-thumb  { background: #6c63ff; border-radius: 2px; }
+
+/* ── Selection ──────────────────────────────────────── */
+::selection { background: rgba(108, 99, 255, 0.25); color: var(--color-text); }
