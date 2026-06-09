@@ -95,8 +95,8 @@ export const PROJECTS = [
     period: "Jun 2025",
     description:
       "Personal portfolio showcasing full-stack development expertise. Built with modern technologies, and Tailwind CSS featuring responsive design, smooth animations, and optimized performance.",
-    tags: ["Next JS", "React", "Tailwind CSS"],
-    href: "https://nawab-portfolio-kbswhgsb3-nawabcs77-6600s-projects.vercel.app/",
+    tags: ["Next JS",  "Tailwind CSS"],
+    href: "https://nawab-portfolio-psi.vercel.app/",
   },
 ];
 
