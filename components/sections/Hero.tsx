@@ -65,7 +65,7 @@ export default function Hero() {
             onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.transform = "translateY(-2px)"; (e.currentTarget as HTMLButtonElement).style.boxShadow = "0 12px 32px rgba(108,99,255,0.35)"; }}
             onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.transform = ""; (e.currentTarget as HTMLButtonElement).style.boxShadow = ""; }}
           >
-            Get In Touch →
+            Hire Me →
           </button>
           <button
             onClick={() => scrollTo("#experience")}

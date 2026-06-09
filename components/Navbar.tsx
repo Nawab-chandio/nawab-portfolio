@@ -120,22 +120,7 @@ export default function Navbar() {
             {isLight ? <MoonIcon /> : <SunIcon />}
           </button>
 
-          {/* Hire Me CTA */}
-          <a
-            href="#contact"
-            onClick={(e) => handleNav(e, "#contact")}
-            style={{
-              background: "#6c63ff", color: "#fff",
-              fontSize: "0.875rem", fontWeight: 500,
-              padding: "0.5rem 1rem", borderRadius: 8,
-              textDecoration: "none", transition: "all 0.2s",
-            }}
-            className="hidden-mobile"
-            onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.transform = "translateY(-1px)"; (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 8px 24px rgba(108,99,255,0.35)"; }}
-            onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.transform = ""; (e.currentTarget as HTMLAnchorElement).style.boxShadow = ""; }}
-          >
-            Hire Me
-          </a>
+         
 
           {/* Mobile hamburger */}
           <button

@@ -56,7 +56,7 @@ export default function Contact() {
           })}
         </div>
 
-        {/* CTA button */}
+       
       </div>
     </AnimatedSection>
   );
