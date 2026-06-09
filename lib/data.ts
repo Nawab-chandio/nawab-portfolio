@@ -87,6 +87,16 @@ export const PROJECTS = [
     description:
       "A web application that enables users to create and manage digital notes with a focus on user-friendly design. Built with React.js and modern front-end technologies — responsive, interactive, and intuitive.",
     tags: ["React JS", "Frontend", "Notes App"],
+    href: "https://picnotes.org/",
+  },
+  {
+    name: "Portfolio Website",
+    emoji: "💼",
+    period: "Jun 2025",
+    description:
+      "Personal portfolio showcasing full-stack development expertise. Built with modern technologies, and Tailwind CSS featuring responsive design, smooth animations, and optimized performance.",
+    tags: ["Next JS", "React", "Tailwind CSS"],
+    href: "https://nawab-portfolio-kbswhgsb3-nawabcs77-6600s-projects.vercel.app/",
   },
 ];
 

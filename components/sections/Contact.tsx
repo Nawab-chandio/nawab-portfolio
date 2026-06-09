@@ -57,15 +57,6 @@ export default function Contact() {
         </div>
 
         {/* CTA button */}
-        <a
-          href={`mailto:${PERSONAL.email}`}
-          style={{ display: "inline-flex", alignItems: "center", gap: "0.75rem", background: "#6c63ff", color: "#fff", fontWeight: 500, fontSize: "1rem", padding: "1rem 2.5rem", borderRadius: 12, textDecoration: "none", transition: "all 0.2s" }}
-          onMouseEnter={e => { const el = e.currentTarget as HTMLAnchorElement; el.style.transform = "translateY(-2px)"; el.style.boxShadow = "0 20px 48px rgba(108,99,255,0.35)"; }}
-          onMouseLeave={e => { const el = e.currentTarget as HTMLAnchorElement; el.style.transform = ""; el.style.boxShadow = ""; }}
-        >
-          <span>Send an Email</span>
-          <span>→</span>
-        </a>
       </div>
     </AnimatedSection>
   );
